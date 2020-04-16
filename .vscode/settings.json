@@ -1,5 +1,23 @@
 {
-    "python.pythonPath": "C:\\Python38-32\\python.exe",
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore= E302, E303, E305, E402, E501, F401,F841, W504",
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.testing.pytestArgs": [
+        ".",
+        "-vv",
+        "--tb=native"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.promptToConfigure": false
+
+
+
+
 }
