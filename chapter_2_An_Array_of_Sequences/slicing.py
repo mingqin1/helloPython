@@ -83,3 +83,58 @@ print(l)
 
 l[2:5] = [100]
 print(l)
+
+"""
+Using + and * with Sequences
+Both + and * always create a new object, and never change their operands.
+Usually both operands of + must be of the same sequence type, and neither of them is modified but a new sequence of the same type is created as result of the concatenation.
+
+"""
+l = [1, 2, 3]
+print(l * 5)
+
+print(5 * 'abcd')
+
+"""
+WARNING
+Beware of expressions like a * n when a is a sequence containing mutable items because the result may surprise you.
+ For example, trying to initialize a list of lists as my_list = [[]] * 3
+ will result in a list with three references to the same inner list, which is probably not what you want.
+"""
+# The outer list is made of three references to the same inner list.
+weird_board = [['_'] * 3] * 3
+print(weird_board)
+
+# Placing a mark in row 1, column 2, reveals that all rows are aliases referring to the same object.
+weird_board[1][2] = 'O'
+
+print(weird_board)
+
+# Create a list of three lists of three items each
+board = [['_'] * 3 for i in range(3)]
+print(board)
+
+board[1][2] = 'X'
+print(board)
+
+
+"""
+list.sort and the sorted Built-In Function
+
+The list.sort method sorts a list in place—that is, without making a copy.
+It returns None to remind us that it changes the target object, and does not create a new list.
+
+In contrast, the built-in function sorted creates a new list and returns
+
+"""
+
+fruits = ['grape', 'raspberry', 'pear', 'banana']
+print(sorted(fruits, reverse=True, key=len))
+print(id(sorted(fruits)))
+
+print(fruits)
+print(id(fruits))
+# This sorts the list in place, and returns None
+print(fruits.sort(reverse=True, key=len))
+#  now fruits is sorted
+print(fruits)
