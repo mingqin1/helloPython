@@ -3,7 +3,7 @@ from random import random
 
 floats = array('d', (random() for i in range(10**7)))
 
-print (floats[-1])
+print(floats[-1])
 
 fp = open('floats.bin', 'wb')
 floats.tofile(fp)
@@ -14,3 +14,12 @@ floats2.fromfile(fp, 10**7)
 fp.close()
 floats2[-1]
 floats2 == floats
+
+#  generator- random() for i in range(10)
+floats3 = array('d', (random() for i in range(10)))
+
+print(sorted(floats3))
+
+
+
+
