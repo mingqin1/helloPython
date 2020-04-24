@@ -5,6 +5,8 @@
 # a keyword-only argument cls is used to pass “class” attributes
 # To specify keyword-only arguments when defining a function, name them after the argument prefixed with *
 
+#  cls is keyword only argument
+
 
 def tag(name, *content, cls=None, **attrs):
     """Generate one or more HTML tags"""
@@ -54,6 +56,9 @@ print(tag(**my_tag))
 Note that keyword-only arguments do not need to have a default value:
  they can be mandatory, like b in the following example.
 """
+# b is keyword-only argument
+
+
 def f(a, *, b):
     return a, b
 
