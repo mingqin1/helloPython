@@ -17,6 +17,7 @@ print([grade(score) for score in [33, 99, 77, 70, 89, 90, 100]])
 insort(seq, item) inserts item into seq so as to keep seq in ascending order
 """
 
+
 SIZE = 7
 
 #  If you don’t initialize the pseudo-random number generator using a random.seed (), internally random generator call the seed function and
