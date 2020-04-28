@@ -30,8 +30,7 @@ DIAL_CODES = [
 country_code = {country: code for code, country in DIAL_CODES}
 print(country_code)
 
-country_code = {code: country.upper() for country, code in country_code.items() if code < 66}
+country_code = {code: country.upper()
+                for country, code in country_code.items() if code < 66}
 print('country_code: ', country_code)
-
-
 
