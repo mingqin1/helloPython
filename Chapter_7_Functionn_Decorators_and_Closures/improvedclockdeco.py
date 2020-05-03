@@ -6,6 +6,7 @@ functools.wraps decorator to copy the relevant attributes from func to clocked.
 Also, in this new version, keyword arguments( **kwargs) are correctly handled.
 """
 
+
 def clock(func):
     @functools.wraps(func)
     def clocked(*args, **kwargs):
