@@ -24,6 +24,10 @@ lax_coordinates = (33.9425, -118.408056)
 # tuple unpacking
 latitude, longitude = lax_coordinates
 
+for i in lax_coordinates:
+    print('i: ', i)
+
+
 """
 elegant application of tuple unpacking is swapping the values of variables without using a temporary variable:
 """
