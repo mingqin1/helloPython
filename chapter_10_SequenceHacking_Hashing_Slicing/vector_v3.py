@@ -99,11 +99,11 @@ class Vector:
     #         else:
         #   Otherwise, set blank error message.
     #             error = ''
-           #  If there is a nonblank error message, raise AttributeError.
+        #  If there is a nonblank error message, raise AttributeError.
     #         if error:
     #             msg = error.format(cls_name=cls.__name__, attr_name=name)
     #             raise AttributeError(msg)
-        #    Default case: call __setattr__ on superclass for standard behavior.
+        #
     #     super().__setattr__(name, value)
 
 

@@ -83,4 +83,3 @@ v7[-1:]
 print('v7[-1:]: ', v7[-1:])
 # Vector does not support multidimensional indexing, so a tuple of indices or slices raises an error.
 v7[1, 2]
-
