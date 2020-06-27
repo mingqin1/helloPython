@@ -2,7 +2,7 @@ def make_averager():
     """ a closure is a function that retains the bindings of the free variables
      that exist when the function is defined,
      so that they can be used later when the
-      function is invoked and the defining scope is no longer available.
+     function is invoked and the defining scope is no longer available.
 
     Returns:
         [type] -- [description]
@@ -23,3 +23,4 @@ def make_averager():
 avg = make_averager()
 
 print(avg(10))
+print(avg(11))
